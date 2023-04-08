@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Blogs = (props) => {
-  return <div>Blogs</div>
+const BlogsPage = (props) => {
+  return <div>BlogsPage</div>
 }
 
-Blogs.propTypes = {}
+BlogsPage.propTypes = {}
 
-export default Blogs
+export default BlogsPage
