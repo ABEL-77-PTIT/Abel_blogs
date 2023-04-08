@@ -2,20 +2,12 @@
   "name": "abel_blogs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "author": "Abel Mac Air M1",
+  "license": "UNLICENSED",
+  "main": "web/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ANTH-77-DEVPTIT/Abel_blogs.git"
-  },
-  "author": "Abel Mac Air M1",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ANTH-77-DEVPTIT/Abel_blogs/issues"
-  },
-  "homepage": "https://github.com/ANTH-77-DEVPTIT/Abel_blogs#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "gulp": "^4.0.2"
