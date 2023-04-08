@@ -1,0 +1,13 @@
+{
+  "name": "web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14.13.1"
+  },
+  "author": "AbelTruong",
+  "license": "UNLICENSED"
+}
