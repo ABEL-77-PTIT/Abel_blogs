@@ -6,7 +6,7 @@ import App from './App'
 const AppContainer = (props) => {
   return (
     <BrowserRouter>
-      <App />
+      <App {...props} />
     </BrowserRouter>
   )
 }

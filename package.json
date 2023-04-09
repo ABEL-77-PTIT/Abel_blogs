@@ -6,7 +6,13 @@
   "license": "UNLICENSED",
   "main": "web/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install_depend": "yarn && cd web/ && yarn && cd frontend/ && yarn && cd ../../",
+    "prettier:code": "prettier \"**/*.{js,jsx}\"",
+    "prettier:other": "prettier \"**/*.{md,css,scss,yaml,yml}\"",
+    "format:code": "npm run prettier:code -- --write",
+    "format:other": "npm run prettier:other -- --write",
+    "format": "npm-run-all -p format:*",
+    "gulp": "gulp"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
