@@ -8,8 +8,8 @@ import logger from 'morgan'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 
-import adminRoute from './backend/routes/index.js'
-// import productRouter from './src/routes/product.js'
+import indexRouter from './backend/routes/index.js'
+import productRoute from './backend/routes/product.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -41,9 +41,8 @@ app.use(
     : express.static(path.join(__dirname, '..', 'frontend', 'build')),
 )
 
-app.use('/api/*', adminRoute)
-
-// app.use('/api/products', productRouter)
+app.use('/', indexRouter)
+app.use('/api', productRoute)
 
 app.get('/*', function (req, res) {
   NODE_ENV === 'development'
@@ -68,7 +67,13 @@ app.use(function (err, req, res, next) {
 })
 
 app.listen(PORT, () => {
-  console.log(`🚀 App listening on port ${PORT}`)
+  console.log(``)
+  console.log(`-----------------------------------------------------------`)
+  console.log(``)
+  console.log(` WELCOME TO ABEL'S BLOGS!!`)
+  console.log(``)
+  console.log(`-----------------------------------------------------------`)
+  console.log(``)
 })
 
 export default app
