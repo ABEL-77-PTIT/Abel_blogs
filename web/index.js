@@ -12,8 +12,7 @@ import bodyParser from 'body-parser'
 dotenv.config({ path: './../.env' })
 
 // import routes
-import indexRouter from './backend/routes/index.js'
-import productRoute from './backend/routes/product.js'
+import adminRoute from './backend/routes/index.js'
 
 // lấy ra đường dẫn tới file index.js này
 const __filename = fileURLToPath(import.meta.url)
@@ -70,9 +69,11 @@ app.use(
     : express.static(path.join(__dirname, '..', 'frontend', 'build')),
 )
 
-// routes
-app.use('/', indexRouter)
-app.use('/api', productRoute)
+// upload routes
+// uploadRoute(app)
+
+// admin routes
+adminRoute(app)
 
 // handle routes NOT FOUND
 app.get('/*', function (req, res) {
