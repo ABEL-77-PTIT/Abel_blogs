@@ -76,7 +76,7 @@ app.use('/api', productRoute)
 
 // handle routes NOT FOUND
 app.get('/*', function (req, res) {
-  NODE_ENV !== 'development'
+  NODE_ENV === 'development'
     ? res.render('index', { title: 'Express' })
     : res.sendFile(path.join(__dirname, '..', 'web/frontend', 'build', 'index.html'))
 })
