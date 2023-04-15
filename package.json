@@ -24,6 +24,7 @@
     "gulp": "gulp"
   },
   "dependencies": {
+    "cloudinary": "^1.36.1",
     "dotenv": "^16.0.3",
     "gulp": "^4.0.2"
   },

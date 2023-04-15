@@ -12,6 +12,7 @@ import bodyParser from 'body-parser'
 dotenv.config({ path: './../.env' })
 
 // import routes
+import uploadRoute from './backend/routes/upload.js'
 import adminRoute from './backend/routes/index.js'
 
 // lấy ra đường dẫn tới file index.js này
@@ -70,7 +71,7 @@ app.use(
 )
 
 // upload routes
-// uploadRoute(app)
+uploadRoute(app)
 
 // admin routes
 adminRoute(app)
