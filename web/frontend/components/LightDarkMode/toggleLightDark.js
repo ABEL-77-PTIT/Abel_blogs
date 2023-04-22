@@ -1,12 +1,4 @@
 function ToggleLightDark() {
-  var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon')
-  var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon')
-  var themeToggleBtn = document.getElementById('theme-toggle')
-
-  // toggle icons inside button
-  themeToggleDarkIcon.classList.toggle('hidden')
-  themeToggleLightIcon.classList.toggle('hidden')
-
   // if set via local storage previously
   if (localStorage.getItem('color-theme')) {
     if (localStorage.getItem('color-theme') === 'light') {
