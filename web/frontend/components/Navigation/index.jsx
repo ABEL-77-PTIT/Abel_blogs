@@ -15,7 +15,7 @@ const Navigation = (props) => {
         <div className="flex md:order-2">
           {/* Dark mode switcher */}
           <div>
-            <LightDarkMode />
+            <LightDarkMode {...props} />
           </div>
           {/* Dark mode switcher end */}
         </div>

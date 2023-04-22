@@ -2,11 +2,23 @@ import React, { useState } from 'react'
 import ToggleLightDark from './toggleLightDark'
 
 const LightDarkMode = (props) => {
+  const { actions } = props
   const [renderIcon, setRenderIcon] = useState(localStorage.getItem('color-theme'))
 
-  const handleLightDarkMode = () => {
-    ToggleLightDark()
-    setRenderIcon(localStorage.getItem('color-theme'))
+  function myFunction() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        ToggleLightDark()
+        setRenderIcon(localStorage.getItem('color-theme'))
+        resolve()
+      }, 1000)
+    })
+  }
+
+  const handleLightDarkMode = async () => {
+    actions.showAppLoading()
+    await myFunction()
+    actions.hideAppLoading()
   }
 
   return (

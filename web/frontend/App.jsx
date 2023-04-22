@@ -34,7 +34,7 @@ const App = (props) => {
 
   return (
     <div className="container mx-auto">
-      <Navigation primaryActions={primaryActions} />
+      <Navigation {...props} primaryActions={primaryActions} />
       <Routes pages={pages} appProps={props} />
       <div style={{ position: 'absolute', bottom: '0px', left: '0px', right: '0px' }}>
         <Footer />
