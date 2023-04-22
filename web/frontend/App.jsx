@@ -9,9 +9,32 @@ const App = (props) => {
   // See documentation for <Routes /> for more info
   const pages = import.meta.globEager('./pages/**/!(*.test.[jt]sx)*.([jt]sx)')
 
+  let primaryActions = [
+    {
+      label: 'Home',
+      pathname: '/',
+    },
+    {
+      label: 'About Me',
+      pathname: '/about-me',
+    },
+    {
+      label: 'Blogs',
+      pathname: '/blogs',
+    },
+    {
+      label: 'Youtube Feed',
+      pathname: '/youtube-feed',
+    },
+    // {
+    //   label: 'Submit',
+    //   pathname: '/submit',
+    // },
+  ]
+
   return (
     <div className="container mx-auto">
-      <Navigation />
+      <Navigation primaryActions={primaryActions} />
       <Routes pages={pages} appProps={props} />
       <div style={{ position: 'absolute', bottom: '0px', left: '0px', right: '0px' }}>
         <Footer />
