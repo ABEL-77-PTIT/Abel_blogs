@@ -5,9 +5,11 @@ import App from './App'
 
 const AppContainer = (props) => {
   return (
-    <BrowserRouter>
-      <App {...props} />
-    </BrowserRouter>
+    <div className="bg-bg-light dark:bg-bg-dark w-screen h-screen">
+      <BrowserRouter>
+        <App {...props} />
+      </BrowserRouter>
+    </div>
   )
 }
 
