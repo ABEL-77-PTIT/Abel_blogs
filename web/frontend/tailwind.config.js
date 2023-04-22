@@ -33,6 +33,11 @@ export default {
       warningColor: '#ffc453',
       warningColorDark: '#ffb320',
     },
+    fontFamily: {
+      primary: ['Roboto', 'sans-serif'],
+      secondary: ['Pacifico', 'cursive'],
+    },
+    fontSize: {},
   },
   plugins: [require('flowbite/plugin')],
 }

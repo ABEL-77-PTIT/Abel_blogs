@@ -6,7 +6,7 @@ const Navigation = (props) => {
   return (
     <nav className="px-2 sm:px-4 py-2.5 border-b-2">
       <div className="flex flex-wrap items-center justify-between">
-        <div className="text-green-900 hover:text-te-light dark:text-te-dark m-2 font-bold text-3xl">
+        <div className="text-green-900 hover:text-te-light dark:text-te-dark m-2 font-bold text-[32px]">
           APT2
         </div>
         <div className="flex md:order-2">
