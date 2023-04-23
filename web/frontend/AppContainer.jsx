@@ -13,7 +13,7 @@ const AppContainer = (props) => {
   )
 
   return (
-    <div className="bg-bg-light dark:bg-bg-dark font-secondary w-screen h-screen">
+    <div className="bg-bg-light dark:bg-bg-dark font-secondary">
       <BrowserRouter>
         <App {...props} />
 
