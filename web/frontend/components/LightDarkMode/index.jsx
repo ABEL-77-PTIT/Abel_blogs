@@ -5,7 +5,7 @@ const LightDarkMode = (props) => {
   const { actions } = props
   const [renderIcon, setRenderIcon] = useState(localStorage.getItem('color-theme'))
 
-  function myFunction() {
+  function sync() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         ToggleLightDark()
@@ -17,7 +17,7 @@ const LightDarkMode = (props) => {
 
   const handleLightDarkMode = async () => {
     actions.showAppLoading()
-    await myFunction()
+    await sync()
     actions.hideAppLoading()
   }
 

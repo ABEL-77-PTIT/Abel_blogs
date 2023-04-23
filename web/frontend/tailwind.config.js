@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class',
-  content: ['./index.html', '../frontend/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './index.html',
+    '../frontend/**/*.{js,ts,jsx,tsx}',
+    './node_modules/tw-elements/dist/js/**/*.js',
+  ],
   theme: {
     extend: {},
     colors: {
@@ -39,5 +43,5 @@ export default {
     },
     fontSize: {},
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin'), require('tw-elements/dist/plugin.cjs')],
 }
