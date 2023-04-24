@@ -33,7 +33,7 @@ const App = (props) => {
   ]
 
   return (
-    <div className="container mx-auto flex flex-col min-h-screen">
+    <div className="container mx-auto w-full flex flex-col min-h-screen">
       <Navigation {...props} primaryActions={primaryActions} />
       <div className="flex-1">
         <Routes pages={pages} appProps={props} />
