@@ -25,6 +25,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development'
 
 // create express app
 const app = express()
+console.log('log lai cai ')
 
 console.log('log choi')
 
