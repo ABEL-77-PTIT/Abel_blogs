@@ -23,6 +23,8 @@ const __dirname = path.dirname(__filename)
 const PORT = process.env.BACKEND_PORT || 5000
 const NODE_ENV = process.env.NODE_ENV || 'development'
 
+console.log('PORT :>> ', PORT)
+
 // create express app
 const app = express()
 
