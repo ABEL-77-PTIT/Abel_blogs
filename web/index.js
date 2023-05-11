@@ -30,6 +30,10 @@ console.log('log lai cai cho dui')
 console.log('them cai cho dui')
 console.log('log lai cai cho dui')
 console.log('them cai cho dui')
+console.log('log lai cai cho dui')
+console.log('them cai cho dui')
+console.log('log lai cai cho dui')
+console.log('them cai cho dui')
 
 /**
  * app.set(): thiết lập một số cấu hình cho ứng dụng
