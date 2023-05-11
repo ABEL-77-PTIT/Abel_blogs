@@ -25,6 +25,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development'
 
 // create express app
 const app = express()
+console.log('log lai cai ')
 
 /**
  * app.set(): thiết lập một số cấu hình cho ứng dụng
