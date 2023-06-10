@@ -19,11 +19,11 @@ export default {
       'bubble-gum': '#ff77e9',
       bermuda: '#78dcca',
       bg: {
-        light: '#F0F8FF',
+        light: '#FBEBF0',
         dark: '#032A1A',
       },
       te: {
-        dark: '#F0F8FF',
+        dark: '#ffffff',
         light: '#032A1A',
       },
       noteColor: '#5b6878',

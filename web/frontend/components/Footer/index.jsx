@@ -28,7 +28,7 @@ const Footer = (props) => {
   return (
     <section>
       <div className="max-w-screen-xl px-4 py-4 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-        <div className="flex justify-center mt-8 space-x-6">
+        <div className="flex  justify-center mt-8 space-x-6">
           {social.map((item) =>
             item.name === 'Youtube' ? (
               <div key={item.url} className="text-gray-400 hover:text-gray-500">
@@ -69,7 +69,7 @@ const Footer = (props) => {
             ),
           )}
         </div>
-        <p className="mt-8 text-base leading-6 text-center text-gray-400">
+        <p className="mt-8 text:te-light dark:text-te-dark leading-6 text-center">
           © 2023 by Abel Truong. All rights reserved.
         </p>
       </div>

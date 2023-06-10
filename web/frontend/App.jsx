@@ -16,7 +16,7 @@ const App = (props) => {
     },
     {
       label: 'About Me',
-      pathname: '/about-me',
+      pathname: '/about-abel',
     },
     {
       label: 'Blogs',
@@ -26,10 +26,10 @@ const App = (props) => {
       label: 'Youtube Feed',
       pathname: '/youtube-feed',
     },
-    // {
-    //   label: 'Submit',
-    //   pathname: '/submit',
-    // },
+    {
+      label: 'Submit',
+      pathname: '/submit',
+    },
   ]
 
   return (
