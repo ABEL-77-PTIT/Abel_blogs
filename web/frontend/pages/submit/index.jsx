@@ -1,23 +1,22 @@
 import React, { useState } from 'react'
-import Button from '../../components/Button'
-import Modal from '../../components/Modal'
+import SubmitApi from '../../apis/submition'
+import Button from './../../components/Button'
 
 const Submit = () => {
-  const [show, setShow] = useState(false)
   const handleSubmit = async () => {
     try {
-      setShow(true)
+      let res = await SubmitApi.submit()
+      if (!res.success) throw res.error
+
+      console.log('res :>> ', res)
     } catch (error) {
       console.log('error :>> ', error)
     }
   }
 
-  console.log('show :>> ', show)
-
   return (
     <>
       <Button content={<p>Testing</p>} onClick={() => handleSubmit()} />
-      {show && <Modal />}
     </>
   )
 }
