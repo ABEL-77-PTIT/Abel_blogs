@@ -4,7 +4,8 @@ export default {
   content: [
     './index.html',
     '../frontend/**/*.{js,ts,jsx,tsx}',
-    './node_modules/tw-elements/dist/js/**/*.js',
+    // './node_modules/tw-elements/dist/js/**/*.js',
+    './node_modules/flowbite/**/*.js',
   ],
   theme: {
     extend: {},
@@ -43,5 +44,6 @@ export default {
     },
     fontSize: {},
   },
-  plugins: [require('flowbite/plugin'), require('tw-elements/dist/plugin.cjs')],
+  // plugins: [require('flowbite/plugin'), require('tw-elements/dist/plugin.cjs')],
+  plugins: [require('flowbite/plugin')],
 }

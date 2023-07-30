@@ -1,17 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../../components/Button'
+import Modal from '../../components/Modal'
 
 const Submit = () => {
+  const [show, setShow] = useState(false)
   const handleSubmit = async () => {
     try {
-      let data = {}
-      console.log('data :>> ', data)
+      setShow(true)
     } catch (error) {
       console.log('error :>> ', error)
     }
   }
 
-  return <Button content={<p>Testing</p>} onClick={() => handleSubmit()} />
+  console.log('show :>> ', show)
+
+  return (
+    <>
+      <Button content={<p>Testing</p>} onClick={() => handleSubmit()} />
+      {show && <Modal />}
+    </>
+  )
 }
 
 export default Submit
